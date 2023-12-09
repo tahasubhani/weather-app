@@ -24,20 +24,20 @@
             backdrop-filter: blur(5px);
             border-radius: 10px;
             box-shadow: 20px 20px 30px;
-
     }
     form{
         padding-top:20px;
     }
-    input{
-        width: 400px;
-        height: 50px;
-        border:1px solid white;
-        border-radius:5px;
+    input[type=text] {
         text-align: center;
         background: transparent;
-        
-    }
+        border: none;
+        border-bottom: 2px solid grey;
+        padding:10px;
+        margin-bottom: 10px;
+        width: 400px;
+        color: white;
+      }
     #dashboard {
             display: flex;
             flex-direction: column;
@@ -61,7 +61,7 @@
 <body>
     <div id="div">
         <form action="#">
-        <input type="text" name="text" placeholder="Enter city name">
+            <input type="text" class="form-control  in py-3 bg-body-tertiary"   placeholder="Enter city name" name="text">
         </form>
         <div id="dashboard">
             <span id="temp"></span>
