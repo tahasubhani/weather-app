@@ -7,9 +7,11 @@
 </head> 
 <style>
     body{
-        background-color:olivedrab;
+        background-image:url("./wallpaperflare.com_wallpaper\ \(2\).jpg");
         display: flex;
         justify-content: center;
+        background-size: 1000px;
+        background-repeat: no-repeat;
     }
     #div{
             width: 600px;
@@ -19,7 +21,7 @@
             flex-direction: column;
             align-items: center;
             padding: 20px;
-            background-color: #FFFFFF;
+            backdrop-filter: blur(5px);
             border-radius: 10px;
     }
     form{
@@ -28,8 +30,10 @@
     input{
         width: 400px;
         height: 50px;
-        border:1px solid olivedrab;
+        border:1px solid white;
         border-radius:5px;
+        text-align: center;
+        background: transparent;
     }
     #dashboard {
             display: flex;
@@ -37,12 +41,17 @@
             /* background-color: #6086DC; */
             width: 400px;
             margin: 20px;
+            color: white;
     }
     #date{
         color: darkblue;
     }
     span{
         padding: 5px;
+    }
+    #temp{
+        font-size: 50px;
+        color: white;
     }
 </style>
 <body>
@@ -51,9 +60,9 @@
         <input type="text" name="text" placeholder="Enter city name">
         </form>
         <div id="dashboard">
+            <span id="temp"></span>
             <span id="date"></span>
             <span id="location"></span>
-            <span id="temp"></span>
             <span id="clouds"></span>
             <span id="sunrise"></span>
             <span id="sunset"></span>
